@@ -6,13 +6,16 @@ return {
 
     config = function()
       require('copilot').setup {
-        suggestion = { enabled = true, auto_trigger = true },
+        suggestion = {
+          enabled = true,
+          auto_trigger = true,
+          keymap = {
+            accept = '<C-y>',
+          },
+        },
         panel = { enabled = true },
       }
     end,
-    keymap = {
-      accept = '<Tab>',
-    },
   },
   'giuxtaposition/blink-cmp-copilot',
 }
