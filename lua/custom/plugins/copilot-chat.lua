@@ -6,7 +6,7 @@ return {
     },
     build = 'make tiktoken',
     opts = {
-      -- See Configuration section for options
+      model = 'auto',
     },
     keys = {
       { '<leader>aa', '<cmd>CopilotChatToggle<CR>', desc = 'Toggle Copilot Chat' },
